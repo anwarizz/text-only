@@ -33,7 +33,7 @@ export default function ArticlePool() {
     }, [])
 
   return (
-    <div className="md:pt-3">
+    <div className="pt-3">
         {articles.map((article) => (
             <ArticleEntry key={article.id} to={`/read/${article.url}`} by={article.by} title={article.title} description={article.description} create_at={article.created_at}/>
         ))}
